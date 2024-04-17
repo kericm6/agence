@@ -1,0 +1,569 @@
+@font-face {
+    font-family: 'font1';
+    src: url(../font/Outfit-Regular.otf);
+}
+
+@font-face {
+    font-family: 'font2';
+    src: url(../font/Outfit-Medium.otf);
+}
+
+:root {
+    --bleu2: #0d6efd;
+    --bleu: rgb(17, 68, 128);
+    --blanc: #fff;
+    --noir: #000;
+    --rouge: #dc3545;
+}
+
+body {
+    font-family: "font1";
+}
+
+header {
+    background: var(--bleu);
+    color: var(--blanc);
+    padding-left: 2em;
+    padding-right: 2rem;
+}
+
+
+/* menu icon */
+
+.menu{
+    display: none;
+}
+/*logo*/
+
+header .logo p {
+    font-size: 40px;
+    font-family: "font2";
+}
+
+/*liens de navigation*/
+header nav {
+    width: 100%;
+}
+
+header nav .infos {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding-right: 20px;
+}
+
+header nav .infos a {
+    text-decoration: none;
+    color: var(--blanc);
+}
+
+header nav .liens {
+    background: var(--blanc);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header nav .liens ul {
+    margin-top: 12px;
+}
+
+header nav .liens ul li {
+    margin-right: 15px;
+    display: inline-block;
+}
+
+header nav .liens .actions a,
+header nav .liens ul li a {
+    text-decoration: none;
+    font-size: 17px;
+}
+
+header nav .liens ul li a:hover {
+    color: var(--rouge);
+    /* background: #dc3545; */
+}
+
+header nav .liens .actions {
+    display: flex;
+    align-items: center;
+    gap: 90px;
+}
+
+header nav .liens .actions a:first-child span {
+    font-size: 10px;
+    color: var(--bleu2);
+}
+
+header nav .liens .actions a:first-child {
+    color: var(--rouge);
+}
+
+header nav .liens .actions a:first-child i {
+    color: black;
+}
+
+header nav .liens .actions .menu a {
+    display: block;
+    font-size: 30px;
+    padding: 4px 10px;
+}
+
+header nav .liens .actions .menu a i {
+    color: var(--blanc);
+}
+
+header nav .liens .actions .menu {
+    background: #0d6efd;
+    display: flex;
+    justify-content: center;
+    /* margin-top: -6px; */
+}
+
+.search_bar {
+    padding: 0 70px;
+    display: none;
+    position: absolute;
+    top: 95px;
+    /* right: 25px;  */
+    z-index: 1000;
+    width: 100%;
+}
+.search_bar i{
+    position: relative;
+    right: 34px;
+    top: 1px;
+    color: var(--blanc);
+    font-size: 20px;
+    background-color: var(--bleu2);
+    padding: 5.5px;
+    display: none;
+}
+.search_bar input{
+    border: none;
+    outline: none;
+    padding: 15px 20px;
+    width: 65%;
+    float: right;
+}
+
+/* banner*/
+section.banner .owl-carousel .item {
+    width: 100%;
+    height: 33rem;
+}
+
+section.banner .owl-carousel .item1 {
+    background: url(../images/ban.jpg);
+    width: 100%;
+    background-size: cover;
+    background-position: top right;
+}
+
+section.banner .owl-carousel .item2 {
+    background: url(../images/debut-des-evala_i1920.jpg);
+    background-size: cover;
+    background-position: top;
+}
+
+section.banner .owl-carousel .item3 {
+    background: url(../images/3.jpeg);
+    background-size: 100%;
+    background-position: top;
+}
+
+/* boutons de navigation owl-carousel*/
+
+.owl-theme .owl-nav {
+    position: absolute;
+    bottom: -2.5%;
+    right: 0;
+
+}
+
+.owl-theme .owl-dots .active span {
+    background: var(--bleu2);
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+    background-color: var(--blanc);
+    height: 45px;
+    width: 45px;
+    border-radius: 0;
+    margin: 2px;
+}
+
+.owl-carousel .owl-nav button.owl-next {
+    background: var(--rouge);
+    height: 45px;
+    width: 45px;
+    border-radius: 0;
+    margin: 2px;
+    color: var(--blanc);
+}
+
+.owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span {
+    font-size: 30px;
+}
+
+.owl-carousel .owl-nav button.owl-prev:hover {
+    background: var(--bleu);
+    color: black;
+}
+
+.owl-carousel .owl-nav button.owl-next:hover {
+    background: var(--rouge);
+}
+ 
+/* section services */ 
+
+section.services {
+    margin-top: 25px;
+    padding: 0 70px;
+}
+
+section.services .row {
+    display: flex;
+    align-items: center;
+}
+
+section.services .row .col span {
+    font-size: 10px;
+    color: var(--bleu2);
+}
+
+section.services .row .col h1 {
+    font-weight: bold;
+    /* color:var(--rouge); */
+}
+
+
+section.services .row .col:last-child a.btn {
+    background: var(--bleu);
+    color: var(--blanc);
+    width: 150px;
+    /* padding: 0; */
+}
+
+/* service items*/
+section.services .row .col .card {
+    border: none;
+    border-radius: 5px;
+}
+
+section.services .row .col .item {
+    display: flex;
+    align-items: start;
+    justify-content: end;
+    padding: 0 20px;
+    color: var(--blanc);
+}
+
+
+/* service item1*/
+section.services .row .col .item1 {
+    background: linear-gradient(rgba(255, 255, 255, 0.096), rgba(17, 69, 128, 0.822)), url(../images/hotels.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+
+/* service item2*/
+section.services .row .col .item2 {
+    background: linear-gradient(rgba(255, 255, 255, 0.096), rgba(17, 69, 128, 0.822)), url(../images/restauration.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+
+/* service item3*/
+section.services .row .col .item3 {
+    background: linear-gradient(rgba(255, 255, 255, 0.096), rgba(17, 69, 128, 0.822)), url(../images/event.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+
+/* service item4*/
+section.services .row .col .item4 {
+    background: linear-gradient(rgba(255, 255, 255, 0.096), rgba(17, 69, 128, 0.822)), url(../images/jeux.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 250px;
+}
+
+section.services .row .col .item i {
+    font-size: 30px;
+}
+
+section.services .row .col .item p {
+    font-weight: bold;
+}
+
+
+/* section about */
+
+section.about {
+    padding: 0 70px;
+
+}
+
+section.about .row .col span {
+    font-size: 10px;
+    color: var(--bleu2);
+}
+
+section.about .row .col:last-child h1 {
+    font-weight: bold;
+}
+
+section.about .row .col:last-child p {
+    text-align: justify;
+}
+
+section.about .row .col:last-child a.btn {
+    background-color: var(--bleu);
+    color: var(--blanc);
+}
+
+/* section mission*/
+
+section.mission {
+    padding: 20px 70px;
+    background: #0d6dfd21;
+}
+
+section.mission .row .col h1 {
+    color: var(--bleu);
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+section.mission .row .col:last-child .row .col .chiffre {
+    font-weight: bold;
+    font-size: 50px;
+    font-family: "font2";
+    color: var(--bleu2);
+}
+
+section.mission .row .col:last-child .row .col {
+    gap: 10px;
+}
+
+section.mission .row .col:last-child .row .col .texte {
+    margin-top: 12px;
+}
+
+section.mission .row .col:last-child .row .col .texte h1 {
+    font-size: 18px;
+}
+
+/* section découverte */
+
+section.decouverte {
+    padding: 0 70px;
+}
+
+section.decouverte .row .col-8 span {
+    font-size: 10px;
+    color: var(--bleu2);
+}
+
+section.decouverte .row .col h1 {
+    font-family: "font2";
+}
+
+section.decouverte .row .col-8 .row .col .img img {
+    width: 400px;
+    border-radius: 4px;
+}
+
+section.decouverte .row .col-8 h1 {
+    color: var(--bleu);
+}
+
+section.decouverte .row .col-8 .row .col {
+    display: flex;
+    gap: 15px;
+}
+
+section.decouverte .row .col-8 .row .col .texte p {
+    text-align: justify;
+}
+
+section.decouverte .row .col-8 .row .col .texte h4 {
+    color: var(--bleu2);
+}
+
+section.decouverte .row .col-8 .row .col .texte .btn {
+    background: var(--bleu2);
+    color: var(--blanc);
+    border-radius: 4px;
+    padding: 3px 20px;
+}
+
+/* button pour decouverte */
+
+.owl-carousel .owl-nav button.owl-prev {
+    background-color: var(--bleu);
+    height: 45px;
+    width: 45px;
+    border-radius: 0;
+    margin: 2px;
+}
+
+section.decouverte .owl-carousel .owl-nav button.owl-next {
+    background: var(--rouge);
+    height: 45px;
+    width: 45px;
+    border-radius: 0;
+    margin: 2px;
+    color: var(--rouge) !important;
+}
+
+section.decouverte .owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span {
+    font-size: 30px;
+    color: var(--blanc);
+}
+
+section.decouverte .owl-carousel .owl-nav button.owl-prev:hover {
+    background: var(--blanc);
+    color: black;
+}
+
+section.decouverte .owl-carousel .owl-nav button.owl-next:hover {
+    background: var(--rouge);
+}
+section.decouverte .owl-carousel .owl-nav button.owl-prev:hover {
+    background: var(--bleu);
+    color: black;
+}
+
+section.decouverte .owl-carousel .owl-nav button.owl-next:hover {
+    background: var(--rouge);
+}
+
+
+/** section nius choiir **/ 
+
+section.nous_choisir{
+    padding: 0 70px;
+}
+
+section.nous_choisir .row .col h1{
+    font-weight: bold;
+    /* font-family: "font2"; */
+    color: var(--bleu);
+}
+section.nous_choisir p{
+    text-align: justify;
+}
+section.nous_choisir .btn{
+    background: var(--bleu);
+    color: var(--blanc);
+}
+section.nous_choisir .items .row .col i{
+    color: var(--rouge);
+}
+section.nous_choisir .items .row .col span{
+    color: var(--bleu);
+}
+
+
+
+/** section actualités **/
+
+section.actualites{
+    padding: 0 70px;
+}
+section.actualites .row .col span{
+    font-size: 10px;
+    color: var(--bleu2);
+}
+section.actualites .row .col:last-child p{
+    font-size: 15px;
+}
+section.actualites .row .col:last-child a.btn{
+    background: var(--bleu);
+    color: var(--blanc);
+    width: 150px;
+}
+section.actualites .row:last-child .col a{
+    text-decoration: none;
+}
+section.actualites .row:last-child .col a .card{
+    width: 18rem;
+    margin-top: 20px;
+}
+section.actualites .row:last-child .col .card .description,section.actualites .row:last-child .col .card .infos
+{
+    padding: 10px 10px;
+    /* text-align: justify; */
+}
+section.actualites .row:last-child .col .card .img img{
+    border-radius: 5px;
+}
+section.actualites .row:last-child .col .card .description h3{
+    margin: 0;
+    font-size: 1.5rem;
+    color: var(--bleu);
+    margin-bottom: .5rem;
+}
+section.actualites .row:last-child .col .card .description p{
+    margin: 0;
+    font-size: 12px;
+}
+section.actualites .row:last-child .col .card .infos{
+    display: flex;
+    justify-content: space-between;
+    font-style: italic;
+}
+section.actualites .row:last-child .col .card .infos span{
+    color: #ccc;
+}
+
+/* section partenaires*/
+
+section.partenaires{
+    /* background: #0d6dfd21; */
+}
+section.partenaires h1{
+    font-weight: bold;
+    font-family: "font2";
+    color: var(--bleu);
+}
+section.partenaires .row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    /* margin-top: 25px    ; */
+}
+section.partenaires .row img{
+    width: 8rem;
+}
+
+/* footer */ 
+
+footer{
+    background: var(--bleu);
+    /* height: 40vh; */
+    padding: 15px 70px;
+    color: var(--blanc);
+}
+footer .row .items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 55px;
+}
+footer .row .items .partenaires img{
+    width: 3.5rem;
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--blanc);
+}

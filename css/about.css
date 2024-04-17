@@ -1,0 +1,70 @@
+.about_banner{
+    background: linear-gradient(rgba(17, 69, 128, 0.521),#000),url(../images/about.jpg);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_banner p{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--blanc);
+    font-family: 'font2';
+}
+
+section.content{
+    padding: 0 70px;
+    margin: 70px;
+    text-align: justify;
+    columns: 2;
+}
+section.pdf{
+    background: #0d6dfd46;
+    padding: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+section.pdf a {
+    /* margin-bottom: 70px; */
+    font-size: 25px;
+    text-decoration: none;
+    font-family: 'font2';
+    font-weight: bold;
+}
+
+
+@media screen and (min-width: 320px) and  (max-width: 480px) {
+    .about_banner{
+        height: 30vh;
+    }
+    .about_banner p{
+        text-transform: uppercase;
+        font-size: 20px;
+        color: var(--blanc);
+        font-family: 'font2';
+        text-align: center; 
+    }
+    section.content{
+        padding: 0 20px;
+        margin: 20px 0;
+        text-align: justify;
+        columns: 1;
+    }
+    section.pdf{
+        background: #0d6dfd46;
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    section.pdf a {
+        /* margin-bottom: 70px; */
+        font-size: 15px;
+        text-decoration: none;
+        font-family: 'font2';
+        font-weight: bold;
+    }
+}

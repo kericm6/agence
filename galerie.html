@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- lien fichier bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- lien fichiers owl-carousel -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <!-- lien fichier remix icon -->
+    <link rel="stylesheet" href="css/remixicon.css">
+    <!--  fichier css index -->
+    <link rel="stylesheet" href="css/index.css">*
+    <!-- fichier css gallerie -->
+    <link rel="stylesheet" href="css/gallerie.css">
+    <!-- fichier responsive -->
+    <link rel="stylesheet" href="css/response.css">
+    <!-- aos -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Agence - Gallerie</title>
+</head>
+
+<body>
+
+    <header class="d-md-flex align-md-items-center  gap-5">
+        <div class="logo">
+            <p>Logo</p>
+        </div>
+        <nav>
+            <div class="infos">
+                <a href="mailto:agence@gmail.com">agence@gmail.com</a>
+                <a href="">
+                    <i class="ri-facebook-fill"></i>
+                </a>
+                <a href="">
+                    <i class="ri-tiktok-fill"></i>
+                </a>
+                <a href="">
+                    <i class="ri-instagram-fill"></i>
+                </a>
+            </div>
+            <div class="liens" id="nav_liens">
+                <ul>
+                    <li><a href="index.html">Acceuil</a></li>
+                    <li><a href="">Services</a></li>
+                    <li><a href="">Offres</a></li>
+                    <li><a href="">Découverte</a></li>
+                    <li><a href="">Actualités</a></li>
+                    <li><a href="galerie.html">Gallerie</a></li>
+                    <li><a href="about.html">A propos de nous</a></li>
+                </ul>
+                <div class="actions">
+                    <a href="tel:+22890909090"><span>Nous Contacter</span> <br> <i class="ri-phone-fill"></i> +228
+                        90909090</a>
+                    <div class="menu">
+                        <a href="#"><i class="ri-search-2-line
+
+                            " id="sr2"></i></a>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+        <div class="menu">
+            <i class="ri-search-2-line" id="sr_icon"></i>
+            <i class="ri-menu-fill " style="font-size: 20px;" id="menu_icon"></i>
+        </div>
+
+        <div class="search_bar" id="search">
+            <input type="search">
+            <i class="ri-search-2-line" id="sr_icon"></i>
+        </div>
+    </header>
+
+
+    <div class="gallerie_banner">
+        <p>Notre gallerie d'image et de vidéos</p>
+    </div>
+
+    <section class="gallerie">
+        <div class="row w-100 gap-5 ">
+            <div class="col-2">
+                <span>Types</span>
+                <span>Photos</span>
+                <span>Videos</span>
+            </div>
+            <div class="col-10">
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="partenaires mb-5 ">
+        <div class="row w-100 ">
+            <img src="images/dtech.jpg" alt="">
+            <img src="images/moov.png" alt="">
+            <img src="images/logo.png" alt="">
+            <img src="images/orabank.jpg" alt="">
+            <img src="images/poste.jpg" alt="">
+        </div>
+
+    </section>
+
+    <!-- footer -->
+
+    <footer>
+        <div class="row w-100">
+
+            <div class="items border-bottom">
+                <div class="logo">
+                    <span>logo</span>
+                </div>
+                <div class="reseaux">
+                    <a href="mailto:agence@gmail.com">agence@gmail.com</a>
+                    <a href="">
+                        <i class="ri-facebook-fill"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-tiktok-fill"></i>
+                    </a>
+                    <a href="">
+                        <i class="ri-instagram-fill"></i>
+                    </a>
+                </div>
+            </div>
+            <p class=" text-center ">Agence, &copy; Tous doits reservés</p>
+        </div>
+    </footer>
+
+
+
+    <script>
+        let menu_icon = document.getElementById("menu_icon");
+        let liens = document.getElementById("nav_liens");
+
+        menu_icon.addEventListener("click", () => {
+            if (getComputedStyle(liens).display == "none") {
+                liens.style.display = "block";
+            } else {
+                liens.style.display = "none";
+            }
+        })
+
+
+
+
+
+    </script>
+
+    <script>
+        let sr_icon = document.getElementById("sr_icon");
+        let search = document.getElementById("search");
+        let sr2 = document.getElementById("sr2")
+        sr_icon.addEventListener("click", () => {
+            if (getComputedStyle(search).display == "none") {
+                search.style.display = "block";
+            } else {
+                search.style.display = "none";
+            }
+        })
+
+        sr2.addEventListener("click", () => {
+            if (getComputedStyle(search).display == "none") {
+                search.style.display = "block";
+            } else {
+                search.style.display = "none";
+            }
+        })
+    </script>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            once: true,
+        });
+    </script>
+
+    <script>
+        document.addEventListener('aos:in', ({ detail }) => {
+            console.log('animated in', detail);
+        });
+
+        document.addEventListener('aos:out', ({ detail }) => {
+            console.log('animated out', detail);
+        });
+    </script>
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            dots: false,
+            // autoplay: true,
+            // autoplayTimeout: 4000,
+            // autoplayHoverPause: true,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 1
+                },
+                1000: {
+                    items: 1
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>
