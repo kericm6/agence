@@ -1,0 +1,40 @@
+
+.gallerie_banner{
+    background: linear-gradient(rgba(17, 69, 128, 0.521),#000),url(../images/gallerie.jpg);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallerie_banner p{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--blanc);
+    font-family: 'font2';
+}
+
+section.gallerie{
+    padding: 0 70px;
+    margin: 70px;
+}
+
+section.gallerie .row .col-2{
+    display: grid;
+    box-shadow: 2px 2px 3px #ccc;
+    padding: 0; 
+}
+section.gallerie .row .col-2 span:first-child{
+    background: var(--bleu);
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+    color: var(--blanc);
+}
+section.gallerie .row .col-10{
+    display: grid;
+    box-shadow: 2px 2px 3px #ccc;
+    padding: 0; 
+}
