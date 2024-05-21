@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- lien fichier bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -11,18 +12,17 @@
     <link rel="stylesheet" href="css/owl.theme.default.min.css">
     <!-- lien fichier remix icon -->
     <link rel="stylesheet" href="css/remixicon.css">
-    <!--  fichier css index -->
+    <!-- lien fichier css principal -->
     <link rel="stylesheet" href="css/index.css">
-    <!-- fichier css gallerie -->
-    <link rel="stylesheet" href="css/gallerie.css">
     <!-- fichier responsive -->
     <link rel="stylesheet" href="css/response.css">
     <!-- aos -->
+    <link rel="stylesheet" href="css/aos.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Agence - Gallerie</title>
+    <title>Agence - Accueil</title>
 </head>
 
-<body>
+<body id="body">
 
     <header class="d-md-flex align-md-items-center  gap-5">
         <div class="logo">
@@ -44,16 +44,17 @@
             <div class="liens" id="nav_liens">
                 <ul>
                     <li><a href="index.html">Acceuil</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">Offres</a></li>
-                    <li><a href="">Découverte</a></li>
-                    <li><a href="">Actualités</a></li>
-                    <li><a href="galerie.html">Gallerie</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="offres.html">Offres</a></li>
+                    <li><a href="decouvertes.html">Découverte</a></li>
+                    <li><a href="actualites.html">Actualités</a></li>
+                    <li><a href="media.html">Medias</a></li>
                     <li><a href="about.html">A propos de nous</a></li>
                 </ul>
                 <div class="actions">
                     <a href="tel:+22890909090"><span>Nous Contacter</span> <br> <i class="ri-phone-fill"></i> +228
-                        90909090</a>
+                        92215280
+                    </a>
                     <div class="menu">
                         <a href="#"><i class="ri-search-2-line
 
@@ -74,168 +75,410 @@
         </div>
     </header>
 
+    <section class="banner">
+        <div class="owl-carousel owl-theme">
+            <div class="item item1">
 
-    <div class="gallerie_banner">
-        <p>Notre gallerie d'image et de vidéos</p>
-    </div>
+            </div>
+            <div class="item item2">
 
-    <section class="gallerie">
-        <div class="row w-100 gap-5 g-0 ">
-            <div class="d-flex align-items-start">
-                <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                    <button class="nav-link active" id="v-pills-home-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-home" type="button" role="tab" aria-controls="v-pills-home"
-                        aria-selected="true">Photos</button>
-                    <button class="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill"
-                        data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile"
-                        aria-selected="false">Vidéos</button>
-
-                </div>
-                <div class="tab-content" id="v-pills-tabContent">
-
-                    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
-                        aria-labelledby="v-pills-home-tab">
-
-                        <!--  section des photos -->
-                        <div class="row row-cols-1 row-cols-md-3 g-4 gal_img_row">
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <a href="images/ban2.jpg">
-                                        <img src="images/ban.jpg" class="img-fluid" alt="...">
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <img src="images/ban.jpg" class="img-fluid" alt="...">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <img src="images/ban.jpg" class="img-fluid" alt="...">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <img src="images/ban.jpg" class="img-fluid" alt="...">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <img src="images/ban.jpg" class="img-fluid" alt="...">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <img src="images/ban.jpg" class="img-fluid" alt="...">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <img src="images/ban.jpg" class="img-fluid" alt="...">
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <img src="images/ban.jpg" class="img-fluid" alt="...">
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- // fin section photos -->
-                    </div>
+            </div>
+            <div class="item item3">
 
 
-                    <!-- section videos -->
-                    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel"
-                        aria-labelledby="v-pills-profile-tab">
-                        <div class="row row-cols-1 row-cols-md-3 g-4 gal_img_row">
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <a href="video/video.mp4">
-                                        <video src="video/video.mp4" controls class="img-fluid "></video>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <a href="images/ban2.jpg">
-                                        <video src="video/video.mp4" controls class="img-fluid "></video>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <a href="images/ban2.jpg">
-                                        <video src="video/video.mp4" controls class="img-fluid "></video>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <a href="images/ban2.jpg">
-                                        <video src="video/video.mp4" controls class="img-fluid "></video>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <a href="images/ban2.jpg">
-                                        <video src="video/video.mp4" controls class="img-fluid "></video>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <a href="images/ban2.jpg">
-                                        <video src="video/video.mp4" controls class="img-fluid "></video>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <a href="images/ban2.jpg">
-                                        <video src="video/video.mp4" controls class="img-fluid "></video>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <a href="images/ban2.jpg">
-                                        <video src="video/video.mp4" controls class="img-fluid "></video>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="col">
-                                <div class="card border-0 ">
-                                    <a href="images/ban2.jpg">
-                                        <video src="video/video.mp4" controls class="img-fluid "></video>
-                                    </a>
-                                </div>
-                            </div>
-                            
-                        </div>
-                    </div>
+            </div>
+            <div class="item item3">
 
-                    <!-- // fin de section videos -->
 
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="row w-100 ">
+            <div class="col" data-aos="fade-right" data-aos-duration="1000">
+                <span>Nos services</span>
+                <h1>Nous offrons une variété de services dans le domaine cultutel et touristique</h1>
+            </div>
+            <div class="col" data-aos="fade-left" data-aos-duration="1500">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ea quam perspiciatis doloribus
+                    nostrum adipisci at magnam</p>
+                <a href="services.html" class="btn">Voir plus </a>
+            </div>
+        </div>
+        <div class="row w-100 mt-5">
+            <div class="col">
+                <div class="item item1 card">
+                    <i class="ri-hotel-fill"></i>
+                    <p>Mise en place des Hotels</p>
                 </div>
             </div>
-
+            <div class="col">
+                <div class="item item2 card">
+                    <i class="ri-restaurant-2-fill"></i>
+                    <p>Restauration</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item item3 card">
+                    <i class="ri-calendar-event-fill"></i>
+                    <p>Evènementiel</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="item item4 card">
+                    <i class="ri-basketball-fill"></i>
+                    <p>jeux concours</p>
+                </div>
+            </div>
         </div>
     </section>
 
 
+    <!-- a propos de nous -->
+
+    <section class="about mt-5 mb-5" data-aos="fade-up" data-aos-duration="3000">
+        <div class="row w-100">
+            <div class="col">
+                <img src="images/about.jpg" alt="" class="img-fluid">
+            </div>
+            <div class="col">
+                <span>
+                    A propos de Nous
+                </span>
+                <h1>Notre idée novatrice de promotion culturelle</h1>
+                <p>nous sommes dédiés à la promotion et à la valorisation de la richesse culturelle et touristique de notre région. Notre mission est de créer des expériences de voyage inoubliables qui permettent à nos visiteurs de s'immerger pleinement dans la diversité et la beauté de notre patrimoine
+                <br>
+                Notre vision est de devenir la référence en matière de promotion culturelle et touristique, en offrant des services de haute qualité qui mettent en lumière les trésors cachés et les merveilles de notre région. Nous aspirons à être un catalyseur de développement durable et à favoriser le dialogue interculturel à travers des expériences authentiques et enrichissantes</p>
+                <a href="about.html" class="btn">En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- nos missions -->
+    <section class="mission">
+        <div class="row w-100 d-flex flex-column">
+            <div class="col">
+                <h1 class="text-center" data-aos="zoom-in" data-aos-duration="1000">Nos missions</h1>
+                <!-- <p class="text-center mission-text">Notre mission est simple : vous offrir des expériences inoubliables.</p> -->
+            </div>
+            <div class="col col_grid">
+                <div class="row d-flex justify-content-center align-items-center ">
+                    <div class="col d-flex align-items-center ">
+                        <div class="chiffre">
+                            01
+                        </div>
+                        <div class="texte">
+                            <h1 class="my-2 ">Promotion du Patrimoine Culture</h1>
+                            <!-- <p>Notre mission principale est de promouvoir et de préserver le riche patrimoine culturel de notre région.</p> -->
+                        </div>
+                    </div>
+
+                    <div class="col d-flex">
+                        <div class="chiffre">
+                            02
+                        </div>
+                        <div class="texte">
+                            <h1 class="my-2 ">Création d'Expériences Authentiques</h1>
+                            <!-- <p>Nous nous efforçons de créer des expériences de voyage authentiques et mémorables pour nos clients.
+                            </p> -->
+                        </div>
+                    </div>
+
+                    <div class="col d-flex  ">
+                        <div class="chiffre">
+                            03
+                        </div>
+                        <div class="texte">
+                            <h1 class="my-2 ">Développement Touristique Durable</h1>
+                            <!-- <p style="text-align: justify;">Nous nous engageons à promouvoir des pratiques touristiques qui préservent notre patrimoine culturel, tout en contribuant au développement économique et social de notre région.</p> -->
+                        </div>
+                    </div>
+
+                    <div class="col d-flex  align-items-start ">
+                        <div class="chiffre">
+                            04
+                        </div>
+                        <div class="texte">
+                            <h1 class="my-2 ">Création de Liens Intercommunautaires</h1>
+                            <!-- <p style="text-align: justify;">Nous favorisons les échanges interculturels et intercommunautaires en encourageant la rencontre entre les habitants locaux et les visiteurs.</p> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- découverte -->
+
+    <section class="decouverte mt-5 mb-5 ">
+        <div class="row w-100 ">
+            <div class="col-8" data-aos="fade-right" data-aos-duration="1500">
+                <span>Découverte</span>
+                <h1>Les peuples et leurs cultures</h1>
+
+                <div class="owl-carousel owl-theme">
+                    <div class="item row w-100 mt-4 ">
+                        <div class="col">
+                            <div class="img">
+                                <img src="images/palais.jpeg" alt="">
+                            </div>
+                            <div class="texte">
+                                <h4>Kozah</h4>
+                                <p class="text-">
+                                    Les Kabyés ou Kabyès sont un peuple d'Afrique de l'Ouest établi au nord du Togo, au
+                                    Bénin et au Ghana.
+
+                                    Les Kabyè sont principalement connus pour leur agriculture en terrasses dans les
+                                    monts Kabyés (chaîne de l'Atacora). Kabyè veut dire « paysan de la pierre » en
+                                    allusion au terrain qu'ils cultivent d'où les paysans extraient de nombreuses
+                                    pierres servant à confectionner les murets des terrasses...
+                                </p>
+                                <a href="" class="btn">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item row w-100 mt-4 ">
+                        <div class="col">
+                            <div class="img">
+                                <img src="images/assoli.jpg" alt="">
+                            </div>
+                            <div class="texte">
+                                <h4>Assoli</h4>
+                                <p class="text-">
+                                    Les Tem (ou Kotokoli) sont une population d'Afrique de l'Ouest vivant principalement au centre du Togo, également au Ghana, au Bénin et au Burkina Faso. Les Tem tirent leurs origines du Burkina Faso actuel, ils se sont installé près de la Volta blanche ( Volta (fleuve) ) avant de se déplacer vers le Togo et le Benin.
+                                </p>
+                                <a href="" class="btn">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item row w-100 mt-4 ">
+                        <div class="col">
+                            <div class="img">
+                                <img src="images/bassar.jpeg" alt="">
+                            </div>
+                            <div class="texte">
+                                <h4>Bassar</h4>
+                                <p class="text-">
+                                    Le peuple Bassar (Bassari) est immigré de l'Afrique de l'Est jusqu'à ce qu'il ne s'installe au nord du Togo. Les Bassars très différents des Bassa d'Afrique centrale tirent leur nom des Monts Barba Bassar au pied desquels le premier groupe arrivé sur le site s'est établi. Le peuple Bassar s'appelle les Bitchamb. Les Bitchamb' parlent le N'tcham... 
+                                </p>
+                                <a href="" class="btn">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item row w-100 mt-4 ">
+                        <div class="col">
+                            <div class="img">
+                                <img src="images/binah.jpeg" alt="">
+                            </div>
+                            <div class="texte">
+                                <h4>Binah</h4>
+                                <p class="text-">
+                                    Binah est une préfecture située dans la région de la Kara, au Togo. Pagouda est le chef-lieu de la préfecture de Binah. Binah se compose de neuf cantons. Il s'agit respectivement de : Pagouda, Kétao, Pessaré, Lama-Dessi, Boufalé, Solla, Sirka, Kémérida et Pitikita
+                                </p>
+                                <a href="" class="btn">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item row w-100 mt-4 ">
+                        <div class="col">
+                            <div class="img">
+                                <img src="images/dankpen.jpg" alt="" class="h-100 ">
+                            </div>
+                            <div class="texte">
+                                <h4>Dankpen</h4>
+                                <p class="text-">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur inventore
+                                    recusandae ducimus cumque aliquam distinctio voluptatibus quos earum explicabo vitae
+                                    facilis ipsa harum blanditiis adipisci, provident tempore pariatur, maxime
+                                    voluptates?
+                                    Dignissimos quidem dicta nisi laudantium eum facere corrupti nihil tempora odio.
+                                </p>
+                                <a href="" class="btn">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item row w-100 mt-4 ">
+                        <div class="col">
+                            <div class="img">
+                                <img src="images/doufelgou.jpeg" alt="" class="h-100 ">
+                            </div>
+                            <div class="texte">
+                                <h4>Doufelgou</h4>
+                                <p class="text-">
+                                    Les Nawdba (pluriel de Nawda) est un groupe ethnique et linguistique de personnes vivant dans la préfecture de Doufelgou ; Une préfecture de la région de la Kara au nord du Togo, en Afrique de l'Ouest. La chef-lieu de la préfecture est Niamtougou <br>Le peuple Nawda vit exclusivement de l'agriculture de subsistance et de l'Agriculture vivrière élevage de petits animaux
+                                </p>
+                                <a href="" class="btn">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item row w-100 mt-4 ">
+                        <div class="col">
+                            <div class="img">
+                                <img src="images/keran.jpg" alt="" class="h-100 ">
+                            </div>
+                            <div class="texte">
+                                <h4>Kéran</h4>
+                                <p class="text-">
+                                    La préfecture de la Kéran est une préfecture du Togo. Elle est située dans la région de la Kara et sa capitale est Kandé <br> La population de la préfecture de la Kéran est essentiellement composée des Lamba qui parlent le Lamba...
+                                </p>
+                                <a href="" class="btn">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-4" data-aos="fade-down-left" data-aos-duration="1700">
+                <img src="images/kara.png" alt="" class="w-100 h-100   ">
+            </div>
+        </div>
+    </section>
 
 
+    <!-- pour quoi nous choisir -->
+    <section class="nous_choisir my-md-5 ">
+        <div class="row w-100 ">
+            <div class="col">
+                <h1>Pourquoi nous choisir ?</h1>
+                <p>Notre équipe est composée de professionnels passionnés et experts dans leur domaine, ayant une connaissance approfondie de notre région. Nos guides locaux sont non seulement informés mais aussi enthousiastes à partager leurs histoires et leurs connaissances, offrant ainsi une perspective authentique et enrichissante de chaque visite</p>
+                <div class="items">
+                    <div class="row row-cols-1 ms-3 mb-3 ">
+                        <div class="col d-flex">
+                            <i class="ri-play-fill"></i>
+                            <h5>Expertise et Passion</h5>
+                        </div>
+                        <p>Notre équipe de professionnels passionnés est dédiée à la création d'expériences uniques et personnalisées pour chaque client.
+                        </p>
+                        <div class="col d-flex">
+                            <i class="ri-play-fill"></i>
+                            <h5>Service Client Inégalé</h5>
+                        </div>
+                        <p>Nous sommes à votre écoute et nous nous engageons à fournir un service de qualité supérieure à chaque étape de votre expérience avec nous.
+                        </p>
+                        <div class="col d-flex">
+                            <i class="ri-play-fill"></i>
+                            <h5>Flexibilité et Personnalisation</h5>
+                        </div>
+                        <p>Nous comprenons que chaque client est unique. C'est pourquoi nous offrons des solutions flexibles et personnalisées pour répondre à vos besoins spécifiques.
+                        </p>
+                    </div>
+                    <a href="" class="btn">
+                        <i class="ri-phone-fill"></i>
+                        <span>Nous contacter</span>
+                    </a>
+                </div>
+            </div>
+            <div class="col">
+                <img src="images/interrogation.png" alt="" class="img-fluid" width="300">
+            </div>
+        </div>
+    </section>
 
 
+    <!-- section actualités -->
 
+    <section class="actualites mt-5 mb-5">
+        <div class="row w-100">
+            <div class="col" data-aos="fade-right" data-aos-duration="1300">
+                <span>Actualités</span>
+                <h1>Les dernières nouvelles</h1>
+            </div>
+            <div class="col" data-aos="fade-left" data-aos-duration="1500">
+                <p>Découvrez les dernières nouvelles et actualités de la région </p>
+                <a href="actualites.html" class="btn">Voir plus </a>
+            </div>
+        </div>
+        <div class="row" data-aos="fade-up" data-aos-duration="1700">
+            <div class="col">
+                <a href="">
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/Evala.jpg" alt="" class="img-fluid ">
+                        </div>
+                        <div class="description">
+                            <h3>Titre Actualité</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, architecto
+                                doloribus
+                            </p>
+                        </div>
+                        <div class="infos">
+                            <span>publié par Michel</span>
+                            <span>il y'a 5 min</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
+            <div class="col">
+                <a href="">
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/Evala.jpg" alt="" class="img-fluid ">
+                        </div>
+                        <div class="description">
+                            <h3>Titre Actualité</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, architecto
+                                doloribus
+                            </p>
+                        </div>
+                        <div class="infos">
+                            <span>publié par Michel</span>
+                            <span>il y'a 5 min</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
+            <div class="col">
+                <a href="">
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/Evala.jpg" alt="" class="img-fluid ">
+                        </div>
+                        <div class="description">
+                            <h3>Titre Actualité</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, architecto
+                                doloribus
+                            </p>
+                        </div>
+                        <div class="infos">
+                            <span>publié par Michel</span>
+                            <span>il y'a 5 min</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
 
+            <div class="col">
+                <a href="">
+                    <div class="card">
+                        <div class="img">
+                            <img src="images/Evala.jpg" alt="" class="img-fluid ">
+                        </div>
+                        <div class="description">
+                            <h3>Titre Actualité</h3>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, architecto
+                                doloribus
+                            </p>
+                        </div>
+                        <div class="infos">
+                            <span>publié par Michel</span>
+                            <span>il y'a 5 min</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
-
+    <!-- section partenaires -->
 
     <section class="partenaires mb-5 ">
         <div class="row w-100 ">
@@ -275,47 +518,8 @@
     </footer>
 
 
-
-    <script>
-        let menu_icon = document.getElementById("menu_icon");
-        let liens = document.getElementById("nav_liens");
-
-        menu_icon.addEventListener("click", () => {
-            if (getComputedStyle(liens).display == "none") {
-                liens.style.display = "block";
-            } else {
-                liens.style.display = "none";
-            }
-        })
-
-
-
-
-
-    </script>
-
-    <script>
-        let sr_icon = document.getElementById("sr_icon");
-        let search = document.getElementById("search");
-        let sr2 = document.getElementById("sr2")
-        sr_icon.addEventListener("click", () => {
-            if (getComputedStyle(search).display == "none") {
-                search.style.display = "block";
-            } else {
-                search.style.display = "none";
-            }
-        })
-
-        sr2.addEventListener("click", () => {
-            if (getComputedStyle(search).display == "none") {
-                search.style.display = "block";
-            } else {
-                search.style.display = "none";
-            }
-        })
-    </script>
-
-
+    <script src="js/main.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
@@ -357,7 +561,6 @@
             }
         })
     </script>
-
 </body>
 
 </html>
